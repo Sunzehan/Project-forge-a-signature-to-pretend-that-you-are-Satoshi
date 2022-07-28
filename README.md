@@ -32,3 +32,14 @@ ECDSA未检查签名邮件时，伪造合法签名使得你可以被认为是Sat
     s ≡ k^(-1)∗ (H(m)+dA∗r)(mod n) 
 
 而(r,s)即为sign算法的输出结果
+
+代码运行指导
+-
+关于Attack_process文件是进行攻击的具体实行，进行签名伪造，伪造自己的身份为Satoshi
+而testing文件则是用于签名伪造结果的验证，检测攻击是否成功，其运行结果的检测截图位于下方
+而ECDSA.py文件则是一个通用的ECC椭圆曲线加密的模型代码
+
+
+测试运行结果截图
+-
+![图片](https://user-images.githubusercontent.com/107350922/181413797-6448dca0-d553-42ae-8bcf-c36b13721a8c.png)
