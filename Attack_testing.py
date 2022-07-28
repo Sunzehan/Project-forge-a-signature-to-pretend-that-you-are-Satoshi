@@ -45,7 +45,7 @@ print("\n")
 print("伪装是否成功：")
 Pretend(r,s,n,G,P)
 
-print("6. Schnorr_Sign签名、ecdsa签名使用相同的d，k，导致密钥泄露：")
+print("7. Schnorr_Sign签名、ecdsa签名使用相同的d，k，导致密钥泄露：")
 print("\n")
 r3,s3=Schnorr_Sign(m,n,G,d,k)
 d2=Schnorr_and_ECDSA(r,s,r3,s3,m,n)
